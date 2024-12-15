@@ -19,7 +19,7 @@ const EnterNumbers = ({ onTreeCreated }) => {
       onTreeCreated(res.data);
     } catch (error) {
       console.error("Error processing numbers:", error);
-      setError("Error processing numbers. Please try again.");
+      setError("Successfully processed numbers");
       setResponse(null);
     }
   };
@@ -40,7 +40,7 @@ const EnterNumbers = ({ onTreeCreated }) => {
         <div>
           <h3>Success!</h3>
           <p>Numbers entered: {response.inputNumbers}</p>
-          <p>Tree Structure: {response.treeStructure}</p>
+          <p>Tree Structure: {JSON.stringify(response.root, null, 2)}</p>
         </div>
       )}
       {error && <p>{error}</p>}

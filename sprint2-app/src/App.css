@@ -7,13 +7,11 @@
 }
 
 body {
-  background-image: url("/public/numbers.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 120vh;
+  background: linear-gradient(#309fd2, #226b8d);
+  height: 100vh;
   margin: 0;
   padding: 0;
+  background-attachment: fixed;
 }
 
 .header {
@@ -88,7 +86,18 @@ h1 {
   max-width: 500px;
   margin: auto;
   margin-top: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.numberBox2 {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  max-width: 500px;
+  margin: auto;
+  margin-top: 50px;
   text-align: center;
 }
 

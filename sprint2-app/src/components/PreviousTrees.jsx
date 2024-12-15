@@ -18,14 +18,15 @@ const PreviousTrees = () => {
   }, []);
 
   return (
-    <div class="numberBox">
+    <div class="numberBox2">
       <h2>Previous Trees</h2>
       <ul>
         {trees.map((tree) => (
           <li key={tree.id} class="treeItem">
             <strong>Input:</strong> {tree.inputNumbers}
             <br />
-            <strong>Tree:</strong> {tree.treeStructure}
+            <strong>Tree:</strong>{" "}
+            <pre>{JSON.stringify(tree.root, null, 2)}</pre>
           </li>
         ))}
       </ul>
