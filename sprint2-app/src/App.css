@@ -2,37 +2,157 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  background-image: url("/public/numbers.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120vh;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #f8f9fa;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 40px;
+  text-decoration: none;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  background-color: #2a8dbb;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.nav a:hover {
+  background-color: #226b8d;
+}
+
+.homeBox {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  max-width: 600px;
+  margin: 30px auto;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.welcomeImage {
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 34px;
+  text-decoration: underline;
+  margin: 0;
+}
+
+.numberBox {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  max-width: 500px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin-top: 30px;
+  padding: 0px;
+}
+
+.button {
+  background-color: #2a8dbb;
+  color: white;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.button:hover {
+  background-color: #226b8d;
+}
+
+.numberBox form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.numberBox label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.numberBox input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.select-box {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f8f9fa;
+  margin-bottom: 20px;
+}
+
+.select-box option {
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+}
+
+.treeItem {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
 }
